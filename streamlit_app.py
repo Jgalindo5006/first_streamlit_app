@@ -29,7 +29,7 @@ def get_fruityvice_data(this_fruit_choice):
     streamlit.text(fruityvice_response.json())
     fruityvice_normalized = pandas.json_normalize(fruityice_response.json())
     streamlit.dataframe(fruityvice_normalized)
-    streamlit.write('The user entered:', fruit_choice)
+    streamlit.write('The user entered:', this_fruit_choice)
   
 streamlit.header('Fruityvice Fruit Advice!')
 try:
@@ -37,7 +37,7 @@ try:
   if not fruit_choice:
     streamlit.error("Please select a fruit to get information.")
   else:
-    back_from_function = get_frutyvice_data(this_fruit_choice)
+    back_from_function = get_fruityvice_data(this_fruit_choice)
     streamlit.dataframe(back_from_function)
 
 except URLError as e:
