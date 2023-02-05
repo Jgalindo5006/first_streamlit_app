@@ -71,5 +71,3 @@ if streamlit.button('Get Fruit Load List'):
 
 #add_fruit = streamlit.text_input("What fruit would you like to add? ", 'Jackfruit')
 #streamlit.text ('Thnak you for adding ' + add_fruit)
-
-
