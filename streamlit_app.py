@@ -58,16 +58,16 @@ if streamlit.button('Get Fruit Load List'):
     streamlit.dtaframe(my_data_rows                      
 
 
-my_cur = my_cnx.cursor()
+#my_cur = my_cnx.cursor()
 ##my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
-my_cur.execute("select * from fruit_load_list")
+#my_cur.execute("select * from fruit_load_list")
 #my_cur.execute("insert into fruit_load_list values ('centeloupe')")
-my_data_row = my_cur.fetchall()
+#my_data_row = my_cur.fetchall()
 
-streamlit.text("The fruit load list: :")
-streamlit.text(my_data_row)
-streamlit.header ("The fruit load list contain")
-streamlit.dataframe(my_data_row)
+#streamlit.text("The fruit load list: :")
+#streamlit.text(my_data_row)
+#streamlit.header ("The fruit load list contain")
+#streamlit.dataframe(my_data_row)
 
 add_fruit = streamlit.text_input("What fruit would you like to add? ", 'Jackfruit')
 streamlit.text ('Thnak you for adding ' + add_fruit)
