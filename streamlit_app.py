@@ -1,4 +1,4 @@
-i#mport streamlit
+#import streamlit
 #import pandas
 #import requests
 #from urllib.error import URLError
